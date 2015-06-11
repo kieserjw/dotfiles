@@ -1,4 +1,3 @@
-"wget 'https://docs.google.com/uc?export=download&id=0BwElxGVvMyfITmtfUnBuSWZ5UUU' -O .vimrc2
 
 "set line numbering
 set number
