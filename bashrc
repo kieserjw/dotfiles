@@ -10,7 +10,6 @@ alias mv='mv -i'
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
-#wget 'https://docs.google.com/uc?export=download&id=0BwElxGVvMyfITXc1MzhFVGNQVzA' -O .bashrc2
 
 #files and folders
 alias c='clear'
