@@ -21,6 +21,8 @@ alias ....='cd ../../..'
 alias duh='du -h --max-depth=1'
 alias dug='du -h --max-depth=1 | grep G'
 alias dum='du -h --max-depth=1 | grep M'
+alias insmod='sudo insmod'
+alias rmmod='sudo rmmod'
 
 # Start calculator with math support
 alias bc='bc -l'
@@ -46,4 +48,6 @@ alias shutdown='sudo /sbin/shutdown'
 
 # resume file download
 alias wget='wget -c'
+
+alias vimmesg='sudo tail /var/log/messages'
 

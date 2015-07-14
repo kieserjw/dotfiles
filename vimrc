@@ -22,3 +22,9 @@ set ruler
 "Map <F3> to toggle search result highlighting
 nnoremap <F3> :set hlsearch!<CR>
 
+"Display more colors in editor"
+set t_Co=256
+
+"Change comments to be a light brown
+hi Comment ctermfg=94
+
