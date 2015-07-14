@@ -13,6 +13,7 @@ fi
 
 #files and folders
 alias c='clear'
+alias ls='ls --color=auto'
 alias ll='ls -lah'
 alias cd..='cd ..'
 alias ..='cd ..'

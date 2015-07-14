@@ -1,4 +1,7 @@
 
+"Set colors
+syntax on
+
 "set line numbering
 set number
 
