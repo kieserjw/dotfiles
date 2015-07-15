@@ -31,3 +31,5 @@ set t_Co=256
 "Change comments to be a light brown
 hi Comment ctermfg=94
 
+"allow for correct pasting from right click
+set paste
