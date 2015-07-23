@@ -52,3 +52,5 @@ alias wget='wget -c'
 
 alias vimmesg='sudo tail /var/log/messages'
 
+alias grep='grep -nIir'
+
