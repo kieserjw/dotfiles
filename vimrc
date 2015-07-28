@@ -33,3 +33,9 @@ hi Comment ctermfg=94
 
 "allow for correct pasting from right click
 set paste
+
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
