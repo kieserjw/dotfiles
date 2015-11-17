@@ -54,3 +54,14 @@ alias vimmesg='sudo tail /var/log/messages'
 
 alias easygrep='grep -nIir --exclude=cscope.out'
 
+alias gitdir='git config --get remote.origin.url'
+
+easyfind () {
+
+if [ "$1" ]
+then 
+find . -iname "*$1*"
+fi
+
+}
+
