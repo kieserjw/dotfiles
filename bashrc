@@ -20,8 +20,8 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias duh='du -h --max-depth=1'
-alias dug='du -h --max-depth=1 | grep G'
-alias dum='du -h --max-depth=1 | grep M'
+alias dug='du -h --max-depth=1 | grep "[0-9]\S*G"'
+alias dum='du -h --max-depth=1 | grep "[0-9]\S*M"'
 alias insmod='sudo insmod'
 alias rmmod='sudo rmmod'
 
@@ -40,12 +40,6 @@ alias apt-get="sudo apt-get"
 # become root 
 alias root='sudo -i'
 alias su='sudo -i'
-
-# reboot / halt / poweroff
-alias reboot='sudo /sbin/reboot'
-alias poweroff='sudo /sbin/poweroff'
-alias halt='sudo /sbin/halt'
-alias shutdown='sudo /sbin/shutdown'
 
 # resume file download
 alias wget='wget -c'
