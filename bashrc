@@ -44,11 +44,11 @@ alias su='sudo -i'
 # resume file download
 alias wget='wget -c'
 
-alias vimmesg='sudo tail /var/log/messages'
-
 alias easygrep='grep -nIir --exclude=cscope.out'
 
 alias gitdir='git config --get remote.origin.url'
+
+source ~/dotfiles/local_alias_list
 
 easyfind () {
 
