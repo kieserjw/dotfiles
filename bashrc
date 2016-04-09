@@ -44,11 +44,13 @@ alias su='sudo -i'
 # resume file download
 alias wget='wget -c'
 
-alias vimmesg='sudo tail /var/log/messages'
-
 alias easygrep='grep -nIir --exclude=cscope.out'
 
 alias gitdir='git config --get remote.origin.url'
+
+if [ -f  ~/dotfiles/local_alias_list ]; then
+    . ~/dotfiles/local_alias_list
+fi
 
 easyfind () {
 
@@ -59,4 +61,3 @@ fi
 
 }
 
-alias home='cd /cygdrive/c/Users/Jeremy'
