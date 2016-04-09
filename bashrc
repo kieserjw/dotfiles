@@ -59,3 +59,4 @@ fi
 
 }
 
+alias home='cd /cygdrive/c/Users/Jeremy'
