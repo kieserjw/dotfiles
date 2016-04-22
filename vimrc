@@ -22,6 +22,9 @@ set incsearch
 "Map <F3> to toggle search result highlighting
 nnoremap <F3> :set hlsearch!<CR>
 
+"Backspace problems
+set backspace=indent,eol,start
+
 "Display more colors in editor"
 set t_Co=256
 

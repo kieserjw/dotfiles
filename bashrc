@@ -48,7 +48,9 @@ alias easygrep='grep -nIir --exclude=cscope.out'
 
 alias gitdir='git config --get remote.origin.url'
 
-source ~/dotfiles/local_alias_list
+if [ -f  ~/dotfiles/local_alias_list ]; then
+    . ~/dotfiles/local_alias_list
+fi
 
 easyfind () {
 
