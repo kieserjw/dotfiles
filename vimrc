@@ -42,3 +42,7 @@ set expandtab
 "When enabled, the ruler is displayed on the right side of the status line at the bottom of the window. By default, it displays the line number, the column number, the virtual column number, and the relative position of the cursor in the file (as a percentage).
 set ruler
 
+"change highlighting colors
+
+highlight Search cterm=bold ctermfg=9 ctermbg=8
+
