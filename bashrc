@@ -48,7 +48,7 @@ alias easygrep='grep -nIir --exclude=cscope.out'
 
 alias giturl='git config --get remote.origin.url'
 
-alias catpub='cat .ssh/id_rsa.pub'
+alias catpub='cat ~/.ssh/id_rsa.pub'
 
 if [ -f  ~/dotfiles/local_alias_list ]; then
     . ~/dotfiles/local_alias_list
