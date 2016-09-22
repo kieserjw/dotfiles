@@ -44,7 +44,7 @@ alias su='sudo -i'
 # resume file download
 alias wget='wget -c'
 
-alias easygrep='grep -nIir --exclude=cscope.out'
+alias easygrep='grep -nIir --color=always'
 
 alias giturl='git config --get remote.origin.url'
 
