@@ -35,9 +35,11 @@ hi Comment ctermfg=94
 set paste
 
 filetype plugin indent on
-set tabstop=3
-set shiftwidth=3
+set tabstop=4
+set shiftwidth=4
 set expandtab
+set softtabstop=0
+set smarttab
 
 "When enabled, the ruler is displayed on the right side of the status line at the bottom of the window. By default, it displays the line number, the column number, the virtual column number, and the relative position of the cursor in the file (as a percentage).
 set ruler
