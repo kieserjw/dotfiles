@@ -13,7 +13,9 @@ set ignorecase
 set smartcase
 
 "easy editing with mouse, wrap cursor
-set mouse=nv
+if has('mouse')
+    set mouse=nv
+endif
 set whichwrap+=<,>,h,l,[,]
 
 "Show the next match while entering a search
