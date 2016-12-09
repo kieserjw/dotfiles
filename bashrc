@@ -1,4 +1,7 @@
+#! /bin/bash
 # .bashrc
+
+cd ~
 
 # User specific aliases and functions
 
@@ -20,8 +23,8 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias duh='du -h --max-depth=1'
-alias dug='du -h --max-depth=1 | grep "[0-9]\S*G"'
-alias dum='du -h --max-depth=1 | grep "[0-9]\S*M"'
+alias dug='du -h --max-depth=1 | grep "[0-9]G"'
+alias dum='du -h --max-depth=1 | grep "[0-9]M"'
 alias insmod='sudo insmod'
 alias rmmod='sudo rmmod'
 
