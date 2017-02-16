@@ -40,10 +40,6 @@ alias vi='vim'
 alias update='sudo apt-get update && sudo apt-get upgrade'
 alias apt-get="sudo apt-get"
 
-# become root 
-alias root='sudo -i'
-alias su='sudo -i'
-
 # resume file download
 alias wget='wget -c'
 
