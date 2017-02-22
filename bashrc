@@ -25,8 +25,6 @@ alias ....='cd ../../..'
 alias duh='du -h --max-depth=1'
 alias dug='du -h --max-depth=1 | grep "[0-9]G"'
 alias dum='du -h --max-depth=1 | grep "[0-9]M"'
-alias insmod='sudo insmod'
-alias rmmod='sudo rmmod'
 
 # Start calculator with math support
 alias bc='bc -l'
@@ -48,6 +46,8 @@ alias easygrep='grep -nIir --color=always'
 alias giturl='git config --get remote.origin.url'
 
 alias catpub='cat ~/.ssh/id_rsa.pub'
+
+alias octal='stat -c "%a %n"'
 
 if [ -f  ~/dotfiles/local_alias_list ]; then
     . ~/dotfiles/local_alias_list
