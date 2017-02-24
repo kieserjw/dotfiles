@@ -49,6 +49,9 @@ alias catpub='cat ~/.ssh/id_rsa.pub'
 
 alias octal='stat -c "%a %n"'
 
+alias beep='tput bel'
+alias bell='tput bel'
+
 if [ -f  ~/dotfiles/local_alias_list ]; then
     . ~/dotfiles/local_alias_list
 fi
