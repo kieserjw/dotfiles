@@ -3,6 +3,25 @@
 
 cd ~
 
+# OS Specific aliases and functions
+
+case "$(uname -s)" in
+
+   Darwin)
+     alias ls='ls -G'
+     alias easygrep='grep -nIir --color=auto '
+     ;;
+
+   CYGWIN*|MINGW32*|MSYS*|Linux)
+     alias ls='ls --color=auto'
+     alias easygrep='grep -nIir --color=always'
+     ;;
+
+   *)
+     echo 'what OS are you on?'
+     ;;
+esac
+
 # User specific aliases and functions
 
 alias rm='rm -i'
@@ -16,15 +35,14 @@ fi
 
 #files and folders
 alias c='clear'
-alias ls='ls --color=auto'
 alias ll='ls -lh'
 alias cd..='cd ..'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias duh='du -h --max-depth=1'
-alias dug='du -h --max-depth=1 | grep "[0-9]G"'
-alias dum='du -h --max-depth=1 | grep "[0-9]M"'
+alias duh='du -h -d 1'
+alias dug='du -h -d 1 | grep "[0-9]G"'
+alias dum='du -h -d 1 | grep "[0-9]M"'
 
 # Start calculator with math support
 alias bc='bc -l'
@@ -40,8 +58,6 @@ alias apt-get="sudo apt-get"
 
 # resume file download
 alias wget='wget -c'
-
-alias easygrep='grep -nIir --color=always'
 
 alias giturl='git config --get remote.origin.url'
 
@@ -66,3 +82,4 @@ fi
 }
 
 export HISTSIZE=""
+export HISTFILESIZE=""

@@ -50,3 +50,8 @@ set ruler
 
 highlight Search cterm=bold ctermfg=9 ctermbg=8
 
+"return cursor to last known position
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+endif
+
