@@ -9,7 +9,7 @@ case "$(uname -s)" in
 
    Darwin)
      alias ls='ls -G'
-     alias easygrep='grep -nIir --color=auto '
+     alias easygrep='grep -nIir --color=auto'
      ;;
 
    CYGWIN*|MINGW32*|MSYS*|Linux)
