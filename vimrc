@@ -55,3 +55,10 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 endif
 
+map <C-A> <Home>
+imap <C-A> <Home>
+vmap <C-A> <Home>
+map <C-E> <End>
+imap <C-E> <End>
+vmap <C-E> <End>
+
