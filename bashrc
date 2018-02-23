@@ -83,3 +83,4 @@ fi
 
 export HISTSIZE=""
 export HISTFILESIZE=""
+export GOPATH="$HOME/go"

@@ -48,7 +48,7 @@ set ruler
 
 "change highlighting colors
 
-highlight Search cterm=bold ctermfg=9 ctermbg=8
+highlight Search cterm=bold ctermfg=Red ctermbg=White
 
 "return cursor to last known position
 if has("autocmd")
