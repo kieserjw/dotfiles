@@ -68,6 +68,8 @@ alias octal='stat -c "%a %n"'
 alias beep='tput bel'
 alias bell='tput bel'
 
+git config --global grep.lineNumber true
+
 if [ -f  ~/dotfiles/local_alias_list ]; then
     . ~/dotfiles/local_alias_list
 fi
@@ -81,6 +83,12 @@ fi
 
 }
 
-export HISTSIZE=""
-export HISTFILESIZE=""
+export HISTSIZE=
+export HISTFILESIZE=
 export GOPATH="$HOME/go"
+
+git --version 2>&1 >/dev/null
+GIT_IS_AVAILABLE=$?
+if [ $GIT_IS_AVAILABLE -eq 0 ]; then
+    source ~/dotfiles/git-completion.bash
+fi
