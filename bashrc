@@ -91,4 +91,9 @@ git --version 2>&1 >/dev/null
 GIT_IS_AVAILABLE=$?
 if [ $GIT_IS_AVAILABLE -eq 0 ]; then
     source ~/dotfiles/git-completion.bash
+    alias gits='git status'
+    alias gitd='git diff'
+    alias gitc='git commit'
+    alias gitb='git branch'
+    alias gitl='git log'
 fi
