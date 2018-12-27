@@ -68,6 +68,8 @@ alias octal='stat -c "%a %n"'
 alias beep='tput bel'
 alias bell='tput bel'
 
+alias tmuxa='tmux a -t 0'
+
 git config --global grep.lineNumber true
 
 if [ -f  ~/dotfiles/local_alias_list ]; then
@@ -96,4 +98,7 @@ if [ $GIT_IS_AVAILABLE -eq 0 ]; then
     alias gitc='git commit'
     alias gitb='git branch'
     alias gitl='git log'
+    alias gitr='git reset --hard'
+    alias gitaj="git add '*java'"
+    alias gitf="git fetch -p --all" # prune branches
 fi
