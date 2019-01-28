@@ -102,3 +102,6 @@ if [ $GIT_IS_AVAILABLE -eq 0 ]; then
     alias gitaj="git add '*java'"
     alias gitf="git fetch -p --all" # prune branches
 fi
+
+export PS1='\e[38;5;208;1m\h:\W \t \$\e[0m '
+
