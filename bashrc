@@ -103,5 +103,5 @@ if [ $GIT_IS_AVAILABLE -eq 0 ]; then
     alias gitf="git fetch -p --all" # prune branches
 fi
 
-export PS1='\e[38;5;208;1m\h:\W \t \$\e[0m '
+export PS1='\[\033[38;5;208;1m\]\h:\W \t \$\[\033[0m\] '
 
