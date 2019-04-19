@@ -101,6 +101,7 @@ if [ $GIT_IS_AVAILABLE -eq 0 ]; then
     alias gitr='git reset --hard'
     alias gitaj="git add '*java'"
     alias gitf="git fetch -p --all" # prune branches
+    alias gitg='git grep --extended-regexp'
 fi
 
 export PS1='\[\033[38;5;208;1m\]\h:\W \t \$\[\033[0m\] '
