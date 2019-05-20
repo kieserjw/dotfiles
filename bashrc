@@ -10,6 +10,9 @@ case "$(uname -s)" in
    Darwin)
      alias ls='ls -G'
      alias easygrep='grep -nIir --color=auto'
+     if [ -f ~/.bash_sessions_disable ]; then
+        touch ~/.bash_sessions_disable
+     fi
      ;;
 
    CYGWIN*|MINGW32*|MSYS*|Linux)
@@ -87,6 +90,7 @@ fi
 
 export HISTSIZE=
 export HISTFILESIZE=
+export HISTFILE=~/.bash_eternal_history
 export GOPATH="$HOME/go"
 
 git --version 2>&1 >/dev/null
