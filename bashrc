@@ -73,6 +73,9 @@ alias bell='tput bel'
 
 alias tmuxa='tmux a -t 0'
 
+alias date-now='date +%s'
+alias date-convert='date -r'
+
 git config --global grep.lineNumber true
 
 if [ -f  ~/dotfiles/local_alias_list ]; then
