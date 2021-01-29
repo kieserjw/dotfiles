@@ -75,6 +75,7 @@ alias tmuxa='tmux a -t 0'
 
 alias date-now='date +%s'
 alias date-convert='date -r'
+alias tree='tree --du -h'
 
 git config --global grep.lineNumber true
 
