@@ -77,6 +77,8 @@ alias date-now='date +%s'
 alias date-convert='date -r'
 alias tree='tree --du -h'
 
+alias cargo-all='cargo check && cargo fmt && cargo clippy && cargo test -q'
+
 git config --global grep.lineNumber true
 
 if [ -f  ~/dotfiles/local_alias_list ]; then
