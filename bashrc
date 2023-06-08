@@ -97,6 +97,7 @@ fi
 export HISTSIZE=
 export HISTFILESIZE=
 export HISTFILE=~/.bash_eternal_history
+touch ~/.bash_sessions_disable
 export GOPATH="$HOME/go"
 
 git --version 2>&1 >/dev/null
